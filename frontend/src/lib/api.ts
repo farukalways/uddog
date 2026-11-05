@@ -1,5 +1,4 @@
-// Server-safe helpers: types, constants and public (no-auth) API calls.
-export const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+export const API_URL = process.env.NEXT_PUBLIC_API_URL
 
 export interface EventItem {
   _id: string;

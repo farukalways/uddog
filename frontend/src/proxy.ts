@@ -5,8 +5,7 @@ import { getSessionCookie } from "better-auth/cookies";
 const PRIVATE_PREFIXES = ["/create-event", "/manage-events", "/joined-events", "/profile"];
 const AUTH_PAGES = ["/login", "/register"];
 
-// Cookie-based gate: a logged-in user keeps their session cookie across reloads,
-// so reloading a private route never bounces them to /login.
+
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
   const hasSession = Boolean(getSessionCookie(request));
