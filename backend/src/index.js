@@ -1,9 +1,9 @@
 import "dotenv/config";
 import express from "express";
 import cors from "cors";
-import { connectDb } from "./lib/db.js";
-import { eventsRouter } from "./routes/events.js";
-import { joinsRouter } from "./routes/joins.js";
+import { eventsRouter } from "./routes/events";
+import { connectDb } from "./lib/db";
+import { joinsRouter } from "./routes/joins";
 
 const app = express();
 const PORT = Number(process.env.PORT) || 5000;
