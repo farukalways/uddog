@@ -2,8 +2,8 @@
 
 import { useSyncExternalStore } from "react";
 
-const LIGHT = "neighbourly";
-const DARK = "neighbourly-dark";
+const LIGHT = "Uddog";
+const DARK = "Uddog-dark";
 
 function subscribe(cb: () => void) {
   const observer = new MutationObserver(cb);

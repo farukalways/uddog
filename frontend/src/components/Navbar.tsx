@@ -27,7 +27,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-40 border-b border-base-300 bg-base-100/90 backdrop-blur">
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-2 px-4">
         <div className="flex items-center gap-2">
-          <Link href="/" className="flex items-center gap-2" aria-label="Neighbourly home">
+          <Link href="/" className="flex items-center gap-2" aria-label="Uddog home">
             <span className="grid h-9 w-9 place-items-center rounded-xl bg-primary text-primary-content">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 21s-7-4.4-9.3-9A5.3 5.3 0 0 1 12 6.6 5.3 5.3 0 0 1 21.3 12C19 16.6 12 21 12 21z" />

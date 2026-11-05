@@ -57,7 +57,7 @@ export default function RegisterForm() {
       toast.error(error.message || "We could not create your account. Please try again.");
       return;
     }
-    toast.success("Account created! Welcome to Neighbourly.");
+    toast.success("Account created! Welcome to Uddog.");
     router.push("/");
     router.refresh();
   }

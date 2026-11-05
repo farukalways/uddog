@@ -51,7 +51,7 @@ export default function ProfilePage() {
   return (
     <section className="mx-auto max-w-2xl px-4 py-12">
       <h1 className="section-title">Your profile</h1>
-      <p className="section-sub mt-2">Update how your neighbours see you across Neighbourly.</p>
+      <p className="section-sub mt-2">Update how your neighbours see you across Uddog.</p>
 
       <div className="card mt-8 border border-base-300 bg-base-100 shadow-sm">
         <div className="card-body gap-6">

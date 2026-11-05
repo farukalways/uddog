@@ -39,7 +39,7 @@ export default function Footer() {
               </svg>
             </span>
             <span className="font-[family-name:var(--font-heading)] text-xl font-bold">
-              Neighbourly
+              Uddog
             </span>
           </div>
           <p className="mt-4 text-sm leading-relaxed opacity-75">
@@ -63,7 +63,7 @@ export default function Footer() {
           <ul className="space-y-2 text-sm opacity-80">
             <li>House 12, Road 4, Mirpur 10, Dhaka 1216</li>
             <li>+880 1700-000000</li>
-            <li>hello@neighbourly.example</li>
+            <li>hello@Uddog.example</li>
             <li>Open daily, 9:00 AM to 8:00 PM</li>
           </ul>
         </div>
@@ -71,13 +71,13 @@ export default function Footer() {
         <div>
           <h3 className="mb-4 font-semibold">Follow us</h3>
           <div className="flex gap-3">
-            <a href="https://x.com" target="_blank" rel="noreferrer" aria-label="Neighbourly on X" className="btn btn-circle btn-outline btn-sm border-neutral-content/30 text-neutral-content hover:bg-primary hover:text-primary-content">
+            <a href="https://x.com" target="_blank" rel="noreferrer" aria-label="Uddog on X" className="btn btn-circle btn-outline btn-sm border-neutral-content/30 text-neutral-content hover:bg-primary hover:text-primary-content">
               <XIcon />
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Neighbourly on Facebook" className="btn btn-circle btn-outline btn-sm border-neutral-content/30 text-neutral-content hover:bg-primary hover:text-primary-content">
+            <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Uddog on Facebook" className="btn btn-circle btn-outline btn-sm border-neutral-content/30 text-neutral-content hover:bg-primary hover:text-primary-content">
               <FacebookIcon />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Neighbourly on Instagram" className="btn btn-circle btn-outline btn-sm border-neutral-content/30 text-neutral-content hover:bg-primary hover:text-primary-content">
+            <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Uddog on Instagram" className="btn btn-circle btn-outline btn-sm border-neutral-content/30 text-neutral-content hover:bg-primary hover:text-primary-content">
               <InstagramIcon />
             </a>
           </div>
@@ -87,7 +87,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-neutral-content/10 py-5 text-center text-xs opacity-60">
-        © {new Date().getFullYear()} Neighbourly. Built for communities that care.
+        © {new Date().getFullYear()} Uddog. Built for communities that care.
       </div>
     </footer>
   );

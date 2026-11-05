@@ -4,7 +4,7 @@
 }
 
 @plugin "daisyui/theme" {
-  name: "neighbourly";
+  name: "Uddog";
   default: true;
   color-scheme: light;
   --color-base-100: #fffdf8;
@@ -29,7 +29,7 @@
 }
 
 @plugin "daisyui/theme" {
-  name: "neighbourly-dark";
+  name: "Uddog-dark";
   prefersdark: true;
   color-scheme: dark;
   --color-base-100: #12191b;

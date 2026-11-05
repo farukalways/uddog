@@ -83,7 +83,7 @@ export default function HomePage() {
               Small acts, <span className="text-primary">one street</span> at a time.
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-relaxed opacity-80">
-              Neighbourly helps you organise and join social service events near you, from blanket
+              Uddog helps you organise and join social service events near you, from blanket
               distributions in Mohammadpur to tree plantations in Dhaka&apos;s parks.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">

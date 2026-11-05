@@ -73,7 +73,7 @@ export default function LoginForm({ redirectTo }: { redirectTo: string }) {
         <GoogleButton redirectTo={redirectTo} />
 
         <p className="text-center text-sm">
-          New to Neighbourly?{" "}
+          New to Uddog?{" "}
           <Link href="/register" className="link link-primary font-medium">
             Create an account
           </Link>

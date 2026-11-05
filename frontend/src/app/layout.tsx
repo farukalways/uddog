@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 const themeScript = `
 try {
   var t = localStorage.getItem("theme");
-  if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "neighbourly-dark" : "neighbourly";
+  if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "Uddog-dark" : "Uddog";
   document.documentElement.setAttribute("data-theme", t);
 } catch (e) {}
 `;
@@ -37,7 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="en"
-      data-theme="neighbourly"
+      data-theme="Uddog"
       suppressHydrationWarning
       className={`${heading.variable} ${body.variable}`}
     >

@@ -1,6 +1,6 @@
-# Neighbourly (Client)
+# Uddog (Client)
 
-Neighbourly is a community platform where people create, join and track social service events in their local area, such as winter clothes distributions in Mirpur 10 or blanket drives in Mohammadpur.
+Uddog is a community platform where people create, join and track social service events in their local area, such as winter clothes distributions in Mirpur 10 or blanket drives in Mohammadpur.
 
 **Live site:** https://YOUR-CLIENT-URL.vercel.app  <!-- replace after deploying -->
 **API (server):** https://YOUR-SERVER-URL.onrender.com  <!-- replace after deploying -->
