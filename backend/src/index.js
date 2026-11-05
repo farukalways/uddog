@@ -1,9 +1,9 @@
 import "dotenv/config";
 import express from "express";
 import cors from "cors";
-import { eventsRouter } from "./routes/events";
-import { connectDb } from "./lib/db";
-import { joinsRouter } from "./routes/joins";
+import { eventsRouter } from "./routes/events.js";
+import { connectDb } from "./lib/db.js";
+import { joinsRouter } from "./routes/joins.js";
 
 const app = express();
 const PORT = Number(process.env.PORT) || 5000;
@@ -15,6 +15,17 @@ app.use(
   }),
 );
 app.use(express.json());
+
+// Database connection middleware for Vercel Serverless
+app.use(async (_req, _res, next) => {
+  try {
+    await connectDb();
+    next();
+  } catch (err) {
+    console.error("Failed to connect to MongoDB", err);
+    next(err);
+  }
+});
 
 app.get("/", (_req, res) => {
   res.json({ name: "Social Events API", status: "running" });
@@ -32,13 +43,9 @@ app.use((err, _req, res, _next) => {
   res.status(500).json({ message: "Something went wrong on our side. Please try again." });
 });
 
-connectDb()
-  .then(() => {
-    app.listen(PORT, () => console.log(`Server running on port ${PORT}`)); 
-  })
-  .catch((err) => {
-    console.error("Failed to connect to MongoDB", err);
-    process.exit(1);
-  });
+// Only start app.listen when running locally
+if (process.env.NODE_ENV !== "production") {
+  app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+}
 
 export default app;
