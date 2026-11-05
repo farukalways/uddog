@@ -17,8 +17,8 @@ const body = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "Neighbourly | Community Service Events",
-    template: "%s | Neighbourly",
+    default: "Uddog | Community Service Events",
+    template: "%s | Uddog",
   },
   description:
     "Create, join and track social service events in your neighbourhood, from winter clothes drives to tree plantations.",
@@ -44,7 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body className="min-h-screen flex flex-col bg-base-100 text-base-content">
+      <body className="min-h-screen flex flex-col bg-base-100 text-base-content"  cz-shortcut-listen="true">
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

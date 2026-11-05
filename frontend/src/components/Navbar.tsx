@@ -34,7 +34,7 @@ export default function Navbar() {
               </svg>
             </span>
             <span className="font-[family-name:var(--font-heading)] text-xl font-bold">
-              Neighbourly
+              Uddog
             </span>
           </Link>
           <div className="ml-4 hidden sm:flex">
