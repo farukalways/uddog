@@ -43,7 +43,6 @@ app.use((err, _req, res, _next) => {
   res.status(500).json({ message: "Something went wrong on our side. Please try again." });
 });
 
-// Only start app.listen when running locally
 if (process.env.NODE_ENV !== "production") {
   app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 }
